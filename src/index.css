@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600;
+}
+.text-gradient {
+  @apply bg-clip-text bg-gradient text-transparent;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+
+::selection {
+  background: rgb(93, 101, 255);
+  color: white;
+}
+
+.maxWidth {
+  max-width : 1200px;
+  margin: auto;
+}
+
+
+body::-webkit-scrollbar {
+  width: .2em;
+  color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(40, 56, 91);
+  
+}
