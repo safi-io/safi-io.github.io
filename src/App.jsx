@@ -18,7 +18,7 @@ export default function App() {
       {loading ? (
         <div>
           <AnimatedBackground
-            animationName="geometricShapes"
+            animationName="fireflies"
             style={{ opacity: 0.3 }}
           />
           <Navbar />

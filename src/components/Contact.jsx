@@ -3,6 +3,11 @@ import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+
+  const handleClick =() => {
+    alert("Backend Integeration Soon, You can mail at m.safi.ullah@outlook.com");
+  }
+
   return (
     <section className="maxWidth text-white px-5">
       <motion.h1
@@ -69,7 +74,7 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <Button variant="contained">Send Message</Button>
+          <Button variant="contained" onClick={handleClick}>Send Message</Button>
         </form>
 
         <div className="mt-10 lg:mt-0">

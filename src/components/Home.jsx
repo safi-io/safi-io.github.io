@@ -8,7 +8,7 @@ import resume from '../../public/M Safiullah Khan.pdf'
 
 export default function Home() {
   return (
-    <section className="maxWidth flex items-center justify-around h-[85vh] text-white flex-col-reverse lg:flex-row ">
+    <section className="maxWidth flex items-center justify-around lg:h-[85vh] h-full text-white flex-col-reverse lg:flex-row flex-wrap ">
       <motion.div
         className="flex flex-col items-center lg:w-[50%] w-full"
         initial={{ x: "-7rem", opacity: "0.1" }}
@@ -54,7 +54,7 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        className="rounded-full overflow-hidden p-1 bg-gradient-to-r from-blue-500 to-pink-900 max-w-[50%]"
+        className="rounded-full overflow-hidden p-1 bg-gradient-to-r from-blue-500 to-pink-900 max-w-[50%] mt-8"
         initial={{ x: "7rem", opacity: "0.1" }}
         animate={{ x: 0, opacity: "1" }}
         transition={{ duration: 2, type: "spring" }}
@@ -62,8 +62,7 @@ export default function Home() {
         <img
           src={profile_picture}
           alt="Profile Picture"
-          width={400}
-          className="rounded-full hover:scale-110 scale-100 duration-700"
+          className="rounded-full hover:scale-110 scale-100 duration-700 lg:w-[400px] w-[50vh]"
         />
       </motion.div>
       
